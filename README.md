@@ -16,7 +16,15 @@ This guide explains how to install and run the Nova Infra Agent as a systemd ser
    ```bash
    mkdir agent-installer
    cd agent-installer
+
    wget https://s3-jkt-1.fromnovatech.xyz/infra/nova-infra-agent-installer.tar.gz?nocache=12345
+
+   # Note: Replace the URL with the actual download link if it changes
+   # If the URL has a cache-busting query parameter, you can rename it after download
+
+   # Example:
+   mv 'nova-infra-agent-installer.tar.gz?nocache=12345' nova-infra-agent-installer.tar.gz
+   
    tar xzvf nova-infra-agent-installer.tar.gz
    chmod +x installer.sh
    ```
